@@ -43,11 +43,15 @@ background-color: transparent;
 .navbar__s2 input:focus{
   outline: none;
 }
-.navbar
+
 .navbar__s3{
   display: flex;
   gap: 10px;
   align-items: center;
+}
+
+.navbar__s4{
+  display: none;
 }
 
 /* My Leraning */
@@ -140,7 +144,10 @@ margin-top: 10px;
 }
 
 .course-card{
-  width: 250px;
+  flex-grow: 1;
+  flex-basis: 20%;
+  margin: 5px;
+
 }
 .course-card img{
   height:50%;
@@ -195,3 +202,36 @@ margin-top: 10px;
   display: flex;
    justify-content: space-between;
 }
+
+/*Media Queries */
+@media screen and (max-width:800px){
+  body{
+    font-size: 10px;
+  }
+}
+@media screen and (max-width:600px) {
+  .course-card{
+    flex-basis: 40%;
+  }
+  .Categories{
+    display: none;
+  }
+  .navbar__s2,.navbar__s3{
+    display: none;
+  }
+  .navbar__s4{
+    display: block;
+  }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
